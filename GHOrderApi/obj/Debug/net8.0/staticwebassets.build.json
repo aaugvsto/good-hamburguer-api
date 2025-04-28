@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "IkY4zMBmFVfbSCc0cdmXX67a6e0ksvboz9bViPFZxBs=",
+  "Source": "GHOrderApi",
+  "BasePath": "_content/GHOrderApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

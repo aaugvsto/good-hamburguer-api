@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\services\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\services\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\services\\orderitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\services\\orderitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\repositories\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\repositories\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\enums\\extraitemtag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\enums\\extraitemtag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\enums\\orderitemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\enums\\orderitemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|c:\\users\\augus\\source\\repos\\ghorderapi\\ghorderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8866555C-EB75-4EAD-BBC8-E07C1B195D6C}|GHOrderApi\\GHOrderApi.csproj|solutionrelative:ghorderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Repositories\\OrderItemRepository.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Repositories\\OrderItemRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Repositories\\OrderItemRepository.cs",
+              "RelativeToolTip": "GHOrderApi\\Repositories\\OrderItemRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T21:38:57.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExtraItemTag.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Enums\\ExtraItemTag.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Enums\\ExtraItemTag.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Enums\\ExtraItemTag.cs",
+              "RelativeToolTip": "GHOrderApi\\Enums\\ExtraItemTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T21:38:40.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Models\\OrderItem.cs",
+              "RelativeToolTip": "GHOrderApi\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T21:01:25.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "GHOrderApi\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T21:00:43.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderItemType.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Enums\\OrderItemType.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Enums\\OrderItemType.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Enums\\OrderItemType.cs",
+              "RelativeToolTip": "GHOrderApi\\Enums\\OrderItemType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T20:57:45.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Models\\Order.cs",
+              "RelativeToolTip": "GHOrderApi\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T20:52:46.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderServices.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Services\\OrderServices.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Services\\OrderServices.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Services\\OrderServices.cs",
+              "RelativeToolTip": "GHOrderApi\\Services\\OrderServices.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvyYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T20:34:23.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderItemServices.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Services\\OrderItemServices.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Services\\OrderItemServices.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Services\\OrderItemServices.cs",
+              "RelativeToolTip": "GHOrderApi\\Services\\OrderItemServices.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T20:33:02.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Program.cs",
+              "RelativeDocumentMoniker": "GHOrderApi\\Program.cs",
+              "ToolTip": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\Program.cs",
+              "RelativeToolTip": "GHOrderApi\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T20:31:03.076Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

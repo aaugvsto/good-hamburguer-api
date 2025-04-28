@@ -1,0 +1,6 @@
+@GHOrderApi_HostAddress = http://localhost:5222
+
+GET {{GHOrderApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
