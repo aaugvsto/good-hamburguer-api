@@ -22,16 +22,23 @@ namespace GHOrderApi.Services
 
         public Order Add(Order entity)
         {
-            if(!entity.Items.Any())
+            if(!entity.ItemsIds.Any())
                 throw new ValidationException("Order must have at least one item.");
 
             var orderItems = OrderItemRepository.Get();
-            var items = orderItems.Where(x => entity.Items.Contains(x.Id));
+            var items = orderItems.Where(x => entity.ItemsIds.Contains(x.Id)).ToArray();
 
-            if(items.Where(x => x.Type == OrderItemType.Sandwich).Count() > 1)
-                throw new ValidationException("Order can only have one sandwich.");
+            if (items.Where(x => x.Type == OrderItemType.Sandwich).Count() > 1)
+                throw new ValidationException("An order can only contain one sandwich.");
 
-            entity.Total = CalculateOrderTotalValue(items);
+            if (items.Where(x => x.Type == OrderItemType.Extra && x.ExtraItemTag == ExtraItemTag.Fries).Count() > 1)
+                throw new ValidationException("An order can only contain one fries.");
+
+            if (items.Where(x => x.Type == OrderItemType.Extra && x.ExtraItemTag == ExtraItemTag.Soda).Count() > 1)
+                throw new ValidationException("You can only pick one soda per order.");
+
+            entity.Amount = CalculateOrderTotalValue(items);
+            entity.Items = items;
 
             return Repository.Add(entity);
         }
@@ -45,12 +52,20 @@ namespace GHOrderApi.Services
 
         public Order Update(Order entity)
         {
+            var orderItems = this.OrderItemRepository.Get().Where(x => entity.ItemsIds.Contains(x.Id)).ToArray();
+
+            if (!orderItems.Any())
+                throw new ValidationException("Order must have at least one item.");
+
+            entity.Items = orderItems;
+            entity.Amount = CalculateOrderTotalValue(orderItems);
+
             return Repository.Update(entity);
         }
 
         #region Private Methods
 
-        private static decimal CalculateOrderTotalValue(IEnumerable<Models.OrderItem> items)
+        private static decimal CalculateOrderTotalValue(IList<OrderItem> items)
         {
             var hasSandwich = false;
             var hasFries = false;

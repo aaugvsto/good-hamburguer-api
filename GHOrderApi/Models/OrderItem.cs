@@ -11,10 +11,10 @@ namespace GHOrderApi.Models
 
         public OrderItem(int id, string name, decimal price, OrderItemType type, ExtraItemTag? extraItemTag = null)
         {
-            this.Id = Id;
-            this.Name = Name;
-            this.Price = Price;
-            this.Type = Type;
+            this.Id = id;
+            this.Name = name;
+            this.Price = price;
+            this.Type = type;
 
             if(type == OrderItemType.Extra)
             {

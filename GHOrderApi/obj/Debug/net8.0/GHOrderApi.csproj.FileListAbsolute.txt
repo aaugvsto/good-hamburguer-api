@@ -35,3 +35,4 @@ C:\Users\augus\source\repos\GHOrderApi\GHOrderApi\obj\Debug\net8.0\refint\GHOrde
 C:\Users\augus\source\repos\GHOrderApi\GHOrderApi\obj\Debug\net8.0\GHOrderApi.pdb
 C:\Users\augus\source\repos\GHOrderApi\GHOrderApi\obj\Debug\net8.0\GHOrderApi.genruntimeconfig.cache
 C:\Users\augus\source\repos\GHOrderApi\GHOrderApi\obj\Debug\net8.0\ref\GHOrderApi.dll
+C:\Users\augus\source\repos\GHOrderApi\GHOrderApi\obj\Debug\net8.0\GHOrderApi.sourcelink.json

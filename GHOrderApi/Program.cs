@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using GHOrderApi.Infra;
 using GHOrderApi.Services.Interfaces;
 using GHOrderApi.Models;
+using System.ComponentModel.DataAnnotations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,7 +33,7 @@ app.MapGet("api/orderitem", (IOrderItemService service) =>
 .WithName("GetOrderItems")
 .WithOpenApi();
 
-app.MapGet("api/orderitem/type/sandwich", (IOrderItemService service) =>
+app.MapGet("api/orderitem/sandwich", (IOrderItemService service) =>
 {
     var response = service.Get().Where(x => x.Type == OrderItemType.Sandwich);
     return Results.Ok(response);
@@ -41,7 +42,7 @@ app.MapGet("api/orderitem/type/sandwich", (IOrderItemService service) =>
 .WithOpenApi();
 
 
-app.MapGet("api/orderitem/type/extra", (IOrderItemService service) =>
+app.MapGet("api/orderitem/extra", (IOrderItemService service) =>
 {
     var response = service.Get().Where(x => x.Type == OrderItemType.Extra);
     return Results.Ok(response);
@@ -56,29 +57,56 @@ app.MapGet("api/order", (IOrderService service) =>
 .WithName("GetOrders")
 .WithOpenApi();
 
-app.MapPost("api/order", ([FromBody] CreateOrderDTO dto) =>
+app.MapPost("api/order", ([FromBody] CreateOrderDTO dto, IOrderService service) =>
 {
-    if(dto.Items.Length == 0)
-        return Results.BadRequest("Order must have at least one item.");
+    try
+    {
+        var order = new Order();
 
-    var order = new Order(1, dto.Items);
+        order.ItemsIds = dto.Items;
 
-    return Results.Ok(order);
+        service.Add(order);
+
+        return Results.Ok(order);
+    }
+    catch(ValidationException ex)
+    {
+        return Results.BadRequest(ex.Message);
+    }
 })
 .WithName("AddGetOrders")
 .WithOpenApi();
 
-app.MapPatch("api/order/", (Order dto, IOrderService service) =>
+app.MapPut("api/order/{id}", (int id, [FromBody] UpdateOrderDTO dto, IOrderService service) =>
 {
-    var orderUpdated = service.Update(dto);
-    return Results.Ok(orderUpdated);
+    try
+    {
+        var order = service.Get().FirstOrDefault(x => x.Id == id);
+
+        if (order is null)
+            return Results.NotFound();
+
+        order.ItemsIds = dto.Items;
+
+        var orderUpdated = service.Update(order);
+
+        return Results.Ok(orderUpdated);
+    }
+    catch (ValidationException ex)
+    {
+        return Results.BadRequest(ex.Message);
+    }
 })
 .WithName("UpdateOrder")
 .WithOpenApi();
 
 app.MapDelete("api/order/{id}", (int id, IOrderService service) =>
 {
+    if (!service.Get().Any(x => x.Id == id))
+        return Results.NotFound();
+
     service.Remove(id);
+
     return Results.NoContent();
 })
 .WithName("RemoveOrder")

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GHOrderApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab2d5ae0cb22cc5b6708c734f351d7610c948d5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("GHOrderApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GHOrderApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

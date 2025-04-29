@@ -1,9 +1,30 @@
-﻿namespace GHOrderApi.Models
+﻿using System.Text.Json.Serialization;
+
+namespace GHOrderApi.Models
 {
-    public class Order(int Id, int[] Items, decimal Total)
+    public class Order
     {
-        public int Id { get; set; } = Id;
-        public int[] Items { get; set; } = Items;
-        public decimal Total { get; set; } = Total;
+        public Order()
+        {
+        }
+
+        public Order(int id, OrderItem[] items, decimal amount)
+        {
+            this.Id = id;
+            this.Items = items;
+            this.Amount = amount;
+        }
+
+        public Order(OrderItem[] items)
+        {
+            this.Items = items;
+        }
+
+        public int Id { get; set; }
+        public OrderItem[] Items { get; set; }
+        public decimal Amount { get; set; }
+
+        [JsonIgnore]
+        public int[] ItemsIds { get; set; }
     }
 }
