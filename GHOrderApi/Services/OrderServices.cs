@@ -37,7 +37,7 @@ namespace GHOrderApi.Services
             if (items.Where(x => x.Type == OrderItemType.Extra && x.ExtraItemTag == ExtraItemTag.Soda).Count() > 1)
                 throw new ValidationException("You can only pick one soda per order.");
 
-            entity.Amount = CalculateOrderTotalValue(items);
+            entity.Amount = CalculateOrderAmount(items);
             entity.Items = items;
 
             return Repository.Add(entity);
@@ -58,14 +58,14 @@ namespace GHOrderApi.Services
                 throw new ValidationException("Order must have at least one item.");
 
             entity.Items = orderItems;
-            entity.Amount = CalculateOrderTotalValue(orderItems);
+            entity.Amount = CalculateOrderAmount(orderItems);
 
             return Repository.Update(entity);
         }
 
         #region Private Methods
 
-        private static decimal CalculateOrderTotalValue(IList<OrderItem> items)
+        private static decimal CalculateOrderAmount(IList<OrderItem> items)
         {
             var hasSandwich = false;
             var hasFries = false;
@@ -78,9 +78,9 @@ namespace GHOrderApi.Services
 
                 if (item.Type == OrderItemType.Sandwich)
                     hasSandwich = true;
-                else if (item.Type == OrderItemType.Extra)
+                else if (item.Type == OrderItemType.Extra && item.ExtraItemTag == ExtraItemTag.Fries)
                     hasFries = true;
-                else if (item.Type == OrderItemType.Extra && item.Name.Equals("Soft Drink", StringComparison.OrdinalIgnoreCase))
+                else if (item.Type == OrderItemType.Extra && item.ExtraItemTag == ExtraItemTag.Soda)
                     hasSoftDrink = true;
             }
 
