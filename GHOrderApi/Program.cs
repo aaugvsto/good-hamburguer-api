@@ -67,7 +67,7 @@ app.MapPost("api/order", ([FromBody] CreateOrderDTO dto, IOrderService service) 
 
         service.Add(order);
 
-        return Results.Ok(order);
+        return Results.Created($"api/order/{order.Id}", new { order.Amount });
     }
     catch(ValidationException ex)
     {
