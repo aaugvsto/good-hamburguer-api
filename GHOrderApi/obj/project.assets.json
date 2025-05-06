@@ -114,6 +114,42 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "GH.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GH.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GH.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GH.Application.dll": {}
+        }
+      },
+      "GH.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GH.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GH.Domain.dll": {}
+        }
+      },
+      "GH.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GH.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GH.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GH.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -560,10 +596,28 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "GH.Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/GH.Application.csproj",
+      "msbuildProject": "../Application/GH.Application.csproj"
+    },
+    "GH.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/GH.Domain.csproj",
+      "msbuildProject": "../Domain/GH.Domain.csproj"
+    },
+    "GH.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/GH.Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/GH.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "GH.Application >= 1.0.0",
+      "GH.Domain >= 1.0.0",
+      "GH.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.15",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -576,9 +630,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\GHOrderApi.csproj",
-      "projectName": "GHOrderApi",
-      "projectPath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\GHOrderApi.csproj",
+      "projectUniqueName": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\GH.WebAPI.csproj",
+      "projectName": "GH.WebAPI",
+      "projectPath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\GH.WebAPI.csproj",
       "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\obj\\",
       "projectStyle": "PackageReference",
@@ -600,7 +654,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\augus\\source\\repos\\GHOrderApi\\Application\\GH.Application.csproj": {
+              "projectPath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\Application\\GH.Application.csproj"
+            },
+            "C:\\Users\\augus\\source\\repos\\GHOrderApi\\Domain\\GH.Domain.csproj": {
+              "projectPath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\Domain\\GH.Domain.csproj"
+            },
+            "C:\\Users\\augus\\source\\repos\\GHOrderApi\\Infrastructure\\GH.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\Infrastructure\\GH.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

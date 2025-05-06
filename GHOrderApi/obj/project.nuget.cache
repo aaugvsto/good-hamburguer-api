@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ROjPiHogiRA=",
+  "dgSpecHash": "bxVv+3LJSas=",
   "success": true,
-  "projectFilePath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\GHOrderApi.csproj",
+  "projectFilePath": "C:\\Users\\augus\\source\\repos\\GHOrderApi\\GHOrderApi\\GH.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\augus\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.15\\microsoft.aspnetcore.openapi.8.0.15.nupkg.sha512",
     "C:\\Users\\augus\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

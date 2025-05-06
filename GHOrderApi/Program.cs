@@ -1,9 +1,9 @@
-using GHOrderApi.Enums;
-using GHOrderApi.Records.DTOs;
+using GH.Application.DTOs;
+using GH.Domain.Entities;
+using GH.Domain.Enums;
+using GH.Domain.Interfaces.Services;
+using GH.WebAPI.Configurations;
 using Microsoft.AspNetCore.Mvc;
-using GHOrderApi.Infra;
-using GHOrderApi.Services.Interfaces;
-using GHOrderApi.Models;
 using System.ComponentModel.DataAnnotations;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "IkY4zMBmFVfbSCc0cdmXX67a6e0ksvboz9bViPFZxBs=",
-  "Source": "GHOrderApi",
-  "BasePath": "_content/GHOrderApi",
+  "Hash": "9L9I5/roEb3HZYduMnEb+HKHHwxLcApxHvvSIy6F8TY=",
+  "Source": "GH.WebAPI",
+  "BasePath": "_content/GH.WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
